@@ -1,0 +1,47 @@
+import java.util.*;
+
+class CharcterProgram
+{
+    public boolean CheckDigit(char ch)
+    {
+        if((ch >= '0') && (ch <= '9'))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
+}
+
+class program150
+{
+    public static void main(String A[])
+    {
+        char cValue =' ';
+        boolean bRet = false;
+        
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter charcter :");
+        cValue = sobj.next().charAt(0);
+
+        CharcterProgram cobj = new CharcterProgram();
+        bRet = cobj.CheckDigit(cValue);
+
+        if(bRet == true)
+        {
+            System.out.println(cValue+" is digit");
+        }
+        else
+        {
+            System.out.println(cValue + " is not digit");
+        }
+
+     
+         
+
+    }
+}
